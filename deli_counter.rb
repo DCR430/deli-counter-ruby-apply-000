@@ -13,7 +13,7 @@ def now_serving(queue_line)
     puts "There is nobody waiting to be served!"
   else #else expression used on conditional basis
     puts "Currently serving #{queue_line.first}." #.first method used to show first member of queue_line array.
-    queue_line.shift #.shift removes first element of queue_line array as well as returns 
+    queue_line.shift #.shift removes first element of queue_line array as well as returns
   end
 
 
