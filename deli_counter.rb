@@ -24,7 +24,7 @@ def line(queue_line)
     puts "The line is currently empty."
   else #else expresion used on conditional basis
     current_line = "The line is currently:" #current_line variable used
-    queue_line.each.with_index(1) do |person, index| #.each method ,.with_index(1) allows index of queue_line array to start at 1 rather then 0
+    queue_line.each.with_index(1) do |person, i| #.each method ,.with_index(1) allows index of queue_line array to start at 1 rather then 0
       current_line << " #{i}. #{person}"
     end
     puts current_line
