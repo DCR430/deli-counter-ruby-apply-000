@@ -23,7 +23,7 @@ def line(queue_line)
   if queue_line.empty? # if expresion used on conditionial basis , .empty method used when the array is empty
     puts "The line is currently empty."
   else #else expresion used on conditional basis
-    current_line = "The line is currently:"
+    current_line = "The line is currently:" #current_line variable used
     queue_line.each.with_index(1) do |person, i| #.with_index(1) allows index of queue_line array to start at 1 rather then 0
       current_line << " #{i}. #{person}"
     end
