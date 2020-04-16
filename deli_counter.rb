@@ -28,12 +28,3 @@ def line(queue_line)
     puts current_line
   end
 end
-
-
-
-
-
-
-
-
-  
