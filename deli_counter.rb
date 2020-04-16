@@ -23,7 +23,7 @@ def line(queue_line)
   if queue_line.empty? # if condition used , .empty method Returns true when they have no elements.
     puts "The line is currently empty."
   else
-    current_queue_line = "The line is currently:"
+    current_line = "The line is currently:"
     queue_line.each.with_index(1) do |person, i|
       current_line << " #{i}. #{person}"
     end
