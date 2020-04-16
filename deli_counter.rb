@@ -6,13 +6,14 @@ def take_a_number(queue_line, name)
   # uses string interpolation to insert #{name}& #{queue_line} , uses .length method to output total quantity in queue_line array
 end
 
-           # argument queue_line array
-def now_serving(queue_line) #now_serving method
-  if queue_line.length == 0 # if condition used, .length method used on queue_line array, ==  (equality)opperator used to signal 0 to be served
+def now_serving(queue_line)
+  if queue_line.empty?
     puts "There is nobody waiting to be served!"
-  else #else condition used
-    puts "Currently serving #{queue_line.shift}." #calling .shift method on array to pull first item from front of queue_line array
+  else
+    puts "Currently serving #{queue_line.first}."
+    queue_line.shift
   end
+  
 
 end
 
@@ -27,3 +28,24 @@ def line(queue_line)
     puts current_line
   end
 end
+
+
+
+
+
+def now_serving(queue_line)
+  if queue_line.empty?
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Currently serving #{queue_line.first}."
+    queue_line.shift
+  end
+
+
+
+
+
+
+
+
+  
