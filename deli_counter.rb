@@ -9,11 +9,11 @@ end
 
 
 def now_serving(queue_line)
-  if queue_line.empty?
+  if queue_line.empty? #.empty used to show that queue_line array is empty
     puts "There is nobody waiting to be served!"
   else
-    puts "Currently serving #{queue_line.first}."
-    queue_line.shift
+    puts "Currently serving #{queue_line.first}." #.first method used to show first member of queue_line array.
+    queue_line.shift #.shift removes first element of queue_line array
   end
 
 
