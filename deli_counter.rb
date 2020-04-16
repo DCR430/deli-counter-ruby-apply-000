@@ -20,7 +20,7 @@ def now_serving(queue_line)
 end
 
 def line(queue_line)
-  if queue_line.empty? # if condition used , .empty method Returns true when they have no elements.
+  if queue_line.empty? # if condition used , .empty method Returns true when the array is empty
     puts "The line is currently empty."
   else
     current_line = "The line is currently:"
