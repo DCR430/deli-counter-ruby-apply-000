@@ -31,4 +31,3 @@ def line(queue_line)
   end
 
 end
-
