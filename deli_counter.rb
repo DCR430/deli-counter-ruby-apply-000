@@ -1,7 +1,7 @@
 queue_line=["Ada","Grace","Kent"]
   #arguments: queue_line array and name
 def take_a_number(queue_line, name)
-  queue_line << name # name argument, use shovel method to add name argument to end of queue_line array
+  queue_line << name # name argument use shovel method to add name argument to end of queue_line array
   puts "Welcome, #{name}. You are number #{queue_line.length} in line."
   # uses string interpolation to insert #{name}& #{queue_line} , uses .length method to output total quantity in queue_line array
 end
