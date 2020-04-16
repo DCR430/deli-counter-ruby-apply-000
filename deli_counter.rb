@@ -33,18 +33,6 @@ end
 
 
 
-def now_serving(queue_line)
-  if queue_line.empty?
-    puts "There is nobody waiting to be served!"
-  else
-    puts "Currently serving #{queue_line.first}."
-    queue_line.shift
-  end
-
-
-
-
-
 
 
 
