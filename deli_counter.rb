@@ -13,7 +13,7 @@ def now_serving(queue_line)
     puts "Currently serving #{queue_line.first}."
     queue_line.shift
   end
-  
+
 
 end
 
