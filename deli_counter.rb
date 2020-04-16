@@ -16,18 +16,14 @@ def now_serving(queue_line) #now_serving method,argument queue_line array
 
 end
 
-def line(queue_line)#line method,argument queue_line array
-  if queue_line.length == 0# if condition used, .length method used on queue_line array, == opperator used to signal 0 to be served
+def line(deli)
+  if deli.empty?
     puts "The line is currently empty."
   else
-message="The line is currently:"# message used to return
-
-    queue_line.each_with_index do |value, index|
-      message += " #{index.to_i+1}. #{value}"
+    current_line = "The line is currently:"
+    deli.each.with_index(1) do |person, i|
+      current_line << " #{i}. #{person}"
     end
-
-    puts "#{message}"
+    puts current_line
   end
-
-
 end
