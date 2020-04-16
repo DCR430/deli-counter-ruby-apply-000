@@ -16,8 +16,8 @@ def now_serving(queue_line) #now_serving method,argument queue_line array
 
 end
 
-def line(deli)
-  if deli.empty?
+def line(queue_line)
+  if queue_line.empty?
     puts "The line is currently empty."
   else
     current_line = "The line is currently:"
