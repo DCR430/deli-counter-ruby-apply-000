@@ -8,7 +8,7 @@ end
 
            # argument queue_line array
 def now_serving(queue_line) #now_serving method
-  if queue_line.length = 0 # if condition used, .length method used on queue_line array, ==  (equality)opperator used to signal 0 to be served
+  if queue_line.length == 0 # if condition used, .length method used on queue_line array, ==  (equality)opperator used to signal 0 to be served
     puts "There is nobody waiting to be served!"
   else #else condition used
     puts "Currently serving #{queue_line.shift}." #calling .shift method on array to pull first item from front of queue_line array
